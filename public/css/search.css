@@ -1,0 +1,41 @@
+.bread_crumbs{
+    height: 20px;
+    margin: 10px auto;
+    font:1.4em "Microsoft YaHei";
+}
+.bread_crumbs li{
+    float: left;
+    margin-right: 5px;
+}
+
+.product_box{
+    float: left;
+    width:275px;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid #eee 1px;
+}
+.product_box:hover{
+    border: solid red 1px;
+}
+.product_box .img{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.product_box img{
+    width:200px;
+    height:240px;
+}
+.price{
+    text-align: center;
+    color: red;
+    font-size: 2em;
+}
+.title{
+    font-size: 1.6em;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+}
+

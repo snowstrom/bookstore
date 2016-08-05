@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>add json</title>
+		<script src='jquery.js'></script>
+	</head>
+	<body>
+		<button id="btn">click me</button>
+		<script>
+			$("button").click(function(){
+				console.log("click me");
+				var obj =  
+		console.log(obj);
+		ajaxObj = JSON.stringify(obj);
+	
+		$.ajax({
+				type:"POST",
+				url:"http://127.0.0.1:3000/add",
+				data:ajaxObj,
+				dataType:"json",
+				contentType:"application/json",
+				success:function(data,status){
+					if(data){
+						console.log("添加成功");
+					}
+				}
+			});
+	});
+
+		</script>
+	</body>
+</html>

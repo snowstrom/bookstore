@@ -1,0 +1,170 @@
+body{
+    font-size: 62.5%
+}
+.layout{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.layout::before,.layout::after,ul::before,ul::after,.clear_fix:after,.clear_fix::before{
+    content:"";
+    display: table;
+}
+.layout::after,ul::after,.clear_fix:after{
+    clear: both;
+}
+.clear_fix,.layout {
+    zoom: 1;
+}
+
+a,a:link,a:visited,a:active{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #BA350F;
+    text-decoration: underline;
+}
+.fl{float:left;}
+.fr{float:right;}
+ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.shortcut{
+	min-width:1100px;
+    height: 30px;
+    line-height: 30px;
+    font-family: "Microsoft YaHei";
+    font-size:1.2em;
+    border-bottom: solid 1px #888888;
+}
+.shortcut li{
+    float: left;
+}
+.shortcut li a{
+    padding-left: 1em;
+}
+
+ img.logo{
+	width:200px;
+	height:110px;
+}
+ 
+ .user_info,.list{
+	border:1px solid #dedede;
+	margin-bottom: 30px;
+ }
+ .user_info .h,.list .h{
+	padding:10px;
+	background-color:#f7f7f7;
+	border-bottom:1px solid #dedede;
+	font:500 1.6em 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+ }
+ .name,.address,.tel{
+	margin:10px 0;
+ }
+ .user_info input{
+	outline:none;
+	margin-left:10px;
+	font:500 1.6em 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+ }
+ .address input{
+	width:500px;
+ }
+ .user_info label{
+	display:inline-block;
+	width:100px;
+	text-align:right;
+	font:500 1.4em 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+}
+ 
+ .goods_num button,.delete{
+	width:20px;
+	height:20px;
+	outline:none;
+	padding:0;
+	text-align:center;
+	vertical-align:middle;
+	color: #bfbfbf;
+	background-color:#fff;
+	border:1px solid  #bfbfbf;
+	border-radius:50%;
+ }
+.goods_num button:hover,.delete:hover{
+	cursor:pointer;
+	color:#fff;
+	background-color:#bfbfbf;
+
+}
+table{
+	width:100%;
+}
+
+table tr{
+	display:block;
+	margin:10px 0;
+	border-top:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	font:500 1.4em 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+}
+
+table td.goods_img{
+	width:100px;
+	padding:10px;
+}
+
+table img{
+	width:60px;
+	height:80px;
+}
+table td.goods_name{
+	width:300px;
+}
+td.goods_price,td.goods_total,td.goods_num, td.goods_op{
+	width:100px;
+	padding-left:50px;
+}
+table td.goods_num div{
+	width:30px;
+	text-align:center;
+	height:20px;
+	line-height:20px;
+}
+.sum {
+	font:500 1.8em 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+	float:right;
+	clear:both;
+	color:#c00;
+	margin:10px 30px;
+}
+.submit{
+	float:right;
+	clear:both;
+	width:100px;
+	height:30px;
+	margin:10px 30px;
+	border-radius:3px;
+	outline:none;
+	color:#fff;
+	border:1px solid #BA350F;
+	background-color: #BA350F;
+	font:500 1.4em 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+}
+button.submit:hover{
+	cursor:pointer;
+	background-color: #D5434A;
+}
+button.submit:active{
+    background-color: #BA350F;
+}
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,185 @@
+ul,ol,h2,body,h2{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 62.5%
+}
+.layout{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.layout::before,.layout::after,ul::before,ul::after,.clear_fix:after,.clear_fix::before{
+    content:"";
+    display: table;
+}
+.layout::after,ul::after,.clear_fix:after{
+    clear: both;
+}
+.clear_fix,.layout {
+    zoom: 1;
+}
+.fl{ float: left;  }
+.fr{  float: right;  }
+ul,ol,li{
+    list-style: none;
+}
+a,a:link,a:visited,a:active{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #BA350F;
+    text-decoration: underline;
+}
+.hr_30{  height: 30px ;}
+.shortcut{
+	min-width:1100px;
+    height: 30px;
+	font: 1.2em/30px "Microsoft YaHei";
+    border-bottom: solid 1px #888;
+}
+.shortcut li{
+    float: left;
+}
+.shortcut li a{
+    padding-left: 1em;
+}
+.logo_search{
+    font-family:'Tahoma',\5FAE\8F6F\96C5\9ED1;
+}
+.logo_box{
+    padding-right: 60px;
+}
+.logo_box img{
+	width:200px;
+	height:110px;
+}
+.search_box{
+    padding-top: 40px;
+}
+.search_box input[name="search_word"]{
+    width: 500px;
+    height: 30px;
+    outline:none;
+	border: solid 2px #BA350F;
+	font:500 1.6em 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+}
+a.search{
+    width: 36px;
+    height: 36px;
+	line-height:38px;
+	padding:0 5px;
+	margin-left:-6px;
+	text-align:center;
+	display:inline-block;
+	color: #fff;
+    font-size: 1.4em;
+    background-color: #BA350F;
+}
+.search:hover{
+	text-decoration: none;
+	background-color: #D5434A;
+}
+.search:active{
+    background-color: #BA350F;
+}
+.hot_search li{
+    float: left;
+    padding: 0.5em 1em 0.5em 0;
+    font-size: 1.3em;
+    color: #8c8c8c;
+	 
+}
+.hot_search li a{color: #8c8c8c}
+
+.category{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    z-index: 999;
+	background-color: #EEE;
+    font-family: "Microsoft YaHei";
+}
+ .category .h {
+    background-color:#BA350F;
+    color: #fff;
+    height: 40px;
+    padding-left: 20px;
+}
+.category h2{
+	font: 400 1.8em/40px "Microsoft YaHei";
+}
+.category-item{
+	padding: 8px 0 8px 20px;
+}
+.category-item h2{
+    height: 34px;
+    font-size: 1.6em;
+}
+.category-item li{
+    float: left;
+    padding: 3px 10px 3px 0;
+}
+.category-item li a{
+    font-size: 1.3em;
+    color: #444
+}
+.category-item li a:hover{
+	text-decoration: underline;
+	color: #BA350F
+}
+
+.sub_category_item{
+    position: absolute;
+    top: 40px;
+    left: 260px;
+    width: 240px;
+    height: 438px;
+    display: none;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+    background-color: #dddddd;
+}
+.sub_category_item li{
+    float: none;
+    padding: 8px 20px;
+    font-size: 1em;
+}
+.sub_category_item fieldset{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 130px;
+	border-top:solid #888888 1px;
+}
+.sub_category_item fieldset legend{
+    text-align: center;
+    font-size: 1.6em;
+}
+.category-item:hover{background-color: #ddd;}
+.category-item:hover .sub_category_item{
+    display: block;
+}
+.nav{
+	height: 40px;
+    padding-left:260px;
+    background-color: #333;
+}
+.nav li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.nav li a{
+    color: #fff;
+    width: 100px;
+    padding: 8px 40px;
+    font-size: 1.8em;
+    font-family: "Microsoft YaHei";
+}
+.nav ul li a:hover{
+    background-color: #000;
+}

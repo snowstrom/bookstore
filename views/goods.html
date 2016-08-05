@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="goods" ng-controller="goodsCtr">
+<head>
+	<meta charset="UTF-8">
+	<title ng-bind="goods.name"></title>
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-sanitize.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico" />
+	<link rel="stylesheet" href="/css/index.css" />
+	<link rel="stylesheet" href="/css/goods.css" />
+</head>
+<body>
+<div class="shortcut">
+	<div class="layout">
+		<div class="fl">
+			hi,欢迎来到我的书城
+		</div>
+		<div class="fr">
+			<ul class="clear_fix">
+				<li ng-if="login_flag"><a href="/login" target="_self">登录</a></li>
+				<li ng-if="login_flag"><a href="/register" target="_self">注册</a></li>
+				<li ng-if="!login_flag">{{currentUser}}</li>
+				<li ng-if="!login_flag"><a href="/logout">退出</a></li>
+				<li><a href="../order">我的订单</a></li>
+				<li><a href="../cart">我的购物车</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="logo_search">
+	<div class="layout">
+		<div class="logo_box fl">
+			<a href="/"><img src="../assets/bookLogo.jpg"  alt="logo"/></a>
+		</div>
+		<div class="search_box fl">
+			<form action="" method="">
+				<input type="text" name="search_word" ng-model="word" />
+				<a href="../search?keyword={{word}}" target="_blank" class="search">搜索</a>
+			</form>
+			<div class="hot_search">
+				<ul>
+					<li><label>热门搜索&nbsp;&nbsp;</label></li>
+					<li><a href="../search?keyword=java" target="_blank">java</a></li>
+					<li><a href="../search?keyword=C++" target="_blank">C++</a></li>
+					<li><a href="../search?keyword=C" target="_blank">C</a></li>
+					<li><a href="../search?keyword=android" target="_blank">android</a></li>
+					<li><a href="../search?keyword=javascript" target="_blank">javascript</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hr_30"></div>
+<div class="layout">
+	<div class="category">
+		<div class="h">
+			<h2>全部商品</h2>
+		</div>
+		<div class="c">
+			<ul>
+				<li class="category-item">
+					<h2><a href="../search?keyword=c" target="_blank">C语言</a></h2>
+					<ul>
+						<li><a href="../goods/c0001" target="_blank">C Primer Plus</a></li>
+						<li><a href="../goods/c0007" target="_blank">C语言入门经典</a></li>
+					</ul>
+					<div class="sub_category_item">
+						<ul>
+							<li><a href="../goods/c0005" target="_blank">C和指针</a></li>
+							<li><a href="../goods/c0003" target="_blank">C陷阱与缺陷</a></li>
+							<li><a href="../goods/c0008" target="_blank">C语言从入门到精通</a></li>
+							<li><a href="../goods/c0002" target="_blank">C程序设计语言（第2版）</a></li>
+							<li><a href="../goods/c0004" target="_blank">数据结构与算法分析（C语言描述）</a></li>
+						</ul>
+						<fieldset>
+							<legend>推荐商品</legend>
+							<ul>
+								<li><a href="../goods/c0002" target="_blank">C程序设计语言（第2版）</a></li>
+								<li><a href="../goods/c0004" target="_blank">数据结构与算法分析（C语言描述</a></li>
+							</ul>
+						</fieldset>
+					</div>
+				</li>
+				<li class="category-item">
+					<h2><a href="../search?keyword=c++" target="_blank">C++语言</a></h2>
+					<ul>
+						<li><a href="../goods/c++0001" target="_blank">C++ Primer</a></li>
+						<li><a href="../goods/c++0008" target="_blank">C++编程思想</a></li>
+					</ul>
+					<div class="sub_category_item">
+						<ul>
+							<li><a href="../goods/c++0004" target="_blank">21天学通C++</a></li>
+							<li><a href="../goods/c++0005" target="_blank">C++入门经典</a></li>
+							<li><a href="../goods/c++0007" target="_blank">C++ Primer Plus</a></li>
+							<li><a href="../goods/c++0003" target="_blank">C++程序设计语言</a></li>
+							<li><a href="../goods/c++0006" target="_blank">C++ Primer 习题集</a></li>
+						</ul>
+						<fieldset>
+							<legend>推荐商品</legend>
+							<ul>
+								<li><a href="../goods/c++0001" target="_blank">C++ Primer</a></li>
+								<li><a href="../goods/c++0003" target="_blank">C++程序设计语言</a></li>
+							</ul>
+						</fieldset>
+					</div>
+				</li>
+				<li class="category-item">
+					<h2><a href="../search?keyword=java" target="_blank">Java语言</a></h2>
+					<ul>
+						<li><a href="../goods/java0008" target="_blank">疯狂Java讲义</a></li>
+						<li><a href="../goods/java0007" target="_blank">Java编程思想</a></li>
+					</ul>
+					<div class="sub_category_item">
+						<ul>
+							<li><a href="../goods/java0003" target="_blank">Java入门经典</a></li>
+							<li><a href="../goods/java0004" target="_blank">Head First Java</a></li>
+							<li><a href="../goods/java0002" target="_blank">Java从入门到精通</a></li>
+							<li><a href="../goods/java0006" target="_blank">Java核心技术（卷2）</a></li>
+							<li><a href="../goods/java0008" target="_blank">疯狂Java讲义</a></li>
+						</ul>
+						<fieldset>
+							<legend>推荐商品</legend>
+							<ul>
+								<li><a href="../goods/java0005" target="_blank">Java核心技术（卷1）</a></li>
+								<li><a href="../goods/java0007" target="_blank">Java编程思想</a></li>
+							</ul>
+						</fieldset>
+					</div>
+				</li>
+				<li class="category-item">
+					<h2><a href="../search?keyword=android" target="_blank">Android</a></h2>
+					<ul>
+						<li><a href="../goods/android0005" target="_blank">Android基础教程</a></li>
+						<li><a href="../goods/android0008" target="_blank">疯狂Android讲义</a></li>
+					</ul>
+					<div class="sub_category_item">
+						<ul>
+							<li><a href="../goods/android0003" target="_blank">Android经典项目开发实战</a></li>
+							<li><a href="../goods/android0007" target="_blank">Android经典项目案例开发实战宝典</a></li>
+							<li><a href="../goods/android0006" target="_blank">Android第一行代码</a></li>
+							<li><a href="../goods/android0005" target="_blank">Android开发实战经典</a></li>
+							<li><a href="../goods/android0008" target="_blank">疯狂Android讲义</a></li>
+						</ul>
+						<fieldset>
+							<legend>推荐商品</legend>
+							<ul>
+								<li><a href="../goods/android0002" target="_blank">Android从入门到精通</a></li>
+								<li><a href="../goods/android0008" target="_blank">疯狂Android讲义</a></li>
+							</ul>
+						</fieldset>
+					</div>
+				</li>
+				<li class="category-item">
+					<h2><a href="../search?keyword=iOS">iOS</a></h2>
+					<ul>
+						<li><a href="../goods/ios0003" target="_blank">iOS开发指南</a></li>
+						<li><a href="../goods/ios0006" target="_blank">iOS开发进阶</a></li>
+					</ul>
+					<div class="sub_category_item">
+						<ul>
+							<li><a href="../goods/ios0001" target="_blank">疯狂iOS讲义（上）</a></li>
+							<li><a href="../goods/ios0002" target="_blank">疯狂iOS讲义（下）</a></li>
+							<li><a href="../goods/ios0004" target="_blank">iOS 9开发快速入门</a></li>
+							<li><a href="../goods/ios0008" target="_blank">Swift与Cocoa框架开发</a></li>
+						</ul>
+						<fieldset>
+							<legend>推荐商品</legend>
+							<ul>
+								<li><a href="../goods/ios0004" target="_blank">iOS 9开发快速入门</a></li>
+								<li><a href="../goods/ios0008" target="_blank">Swift与Cocoa框架开发</a></li>
+							</ul>
+						</fieldset>
+					</div>
+				</li>
+				<li class="category-item">
+					<h2><a href="../search?keyword=web">Web</a></h2>
+					<ul>
+						<li><a href="../goods/web0001" target="_blank">Javascript权威指南</a></li>
+						<li><a href="../goods/web0006" target="_blank">图解CSS3</a></li>
+					</ul>
+					<div class="sub_category_item">
+						<ul>
+							<li><a href="../goods/web0001" target="_blank">Javascript语言精粹</a></li>
+							<li><a href="../goods/web0004" target="_blank">HTML5权威指南</a></li>
+							<li><a href="../goods/web0005" target="_blank">HTML5与CSS3基础教程</a></li>
+							<li><a href="../goods/web0008" target="_blank">你不知道的Javascript（上卷）</a></li>
+						</ul>
+						<fieldset>
+							<legend>推荐商品</legend>
+							<ul>
+								<li><a href="../goods/web0001" target="_blank">Javascript权威指南</a></li>
+								<li><a href="goods/web0002" target="_blank">Javascript高级程序设计（第3版）</a></li>
+							</ul>
+						</fieldset>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="/">首页</a></li>
+			<li><a href="#">前端专场</a></li>
+			<li><a href="#">Java专场</a></li>
+			<li><a href="#">Android专场</a></li>
+		</ul>
+	</div>
+</div>
+<!--给分类导航加鼠标悬浮效果和白色小三角-->
+<script>
+	(function(){
+		$("<div class='down_arrow' style='position: absolute; top: 18px;left: 230px;border-left:5px #BA350F solid;border-top:5px #fff solid;border-right:5px #BA350F solid;border-bottom: none'></div>").appendTo($(".category"));
+		$("<div class='up_arrow' style='position: absolute; top: 18px;left: 230px;border-left:5px #BA350F solid;border-bottom:5px #fff solid;border-right:5px #BA350F solid;border-top: none'></div>").appendTo($(".category"));
+		$(".category .c").hide();
+		$(".up_arrow").hide();
+		$(".category").hover(
+				function(){
+					$(".category .c").show();
+					$(".down_arrow").hide();
+					$(".up_arrow").show();
+				}, function () {
+					$(".down_arrow").show();
+					$(".up_arrow").hide();
+					$(".category .c").hide();
+				});
+	})();
+</script>
+<!--下面是商品详情页  -->
+<!-- 加一个控制器-->
+	<div class="layout bread_crumbs">
+		<ul>
+			<li><a href="/">首页</a></li>
+			<li>&gt;</li>
+			<li>{{goods.name}}</li>
+		</ul>
+	</div>
+
+<div class="layout">
+	<div class="goods_info clear_fix fl">
+		<div class="area_l fl">
+			<div class="pic_box">
+				<img ng-src="../{{goods.src}}">
+			</div>
+			<h2>商品样图</h2> 
+		</div>
+		<div class="area_r fl">
+			<div class="h_wrap">
+				<h2>{{goods.name}}</h2>
+			</div>
+			<div class="c_wrap">
+				<ul>
+					<li><span class="info_label">价格</span>&nbsp;&nbsp;<span class="goods_price"><b>¥</b>&nbsp;{{goods.price }}</span></li>
+					<li><span class="info_label">运费</span>&nbsp;&nbsp;<span class="post_rang">陕西西安&nbsp;<span class="to">&nbsp;&nbsp;送至&nbsp;&nbsp;</span>&nbsp;全国</span>&nbsp;&nbsp;&nbsp;<span class="info_label">快递</span>&nbsp;<span class="goods_post"><b>¥</b>&nbsp;{{goods.post}}</span></li>
+					<li><span class="info_label">配送</span>&nbsp;&nbsp;<span class="post_method">本商品由老板送货上门</span></li>
+					<li><span class="info_label">月销量</span>&nbsp;&nbsp;<span class="goods_sail">{{goods.sail}}</span>&nbsp;&nbsp;&nbsp;<span class="info_label"> 累计评价</span>&nbsp;&nbsp;<span class="goods_comment">{{goods.comment}}</span></li>
+				</ul>
+				<div class="shop_num_wrap">
+					<span class="info_label">购买数量</span>&nbsp;<input type="number" class="shop_num" value="1" min="1" max="{{goods.stock}}" ng-model="number">&nbsp;&nbsp;&nbsp;<span class="info_label">库存</span> &nbsp;<span class="goods_stock">{{goods.stock}}</span>
+				</div>
+			</div>
+			<div class="buy">
+				<button class="buy_now">立即购买</button>
+				<button class="add_cart" ng-click="add_cart()">加入购物车</button>
+			</div>
+		</div>
+	</div>
+	<div class="cart fr">
+		<h2>购物车</h2>
+		<div class="goods_wrap">
+			<div class="clear_fix cart_goods" ng-repeat="item in cart">
+				<div class="fl cart_goods_img">
+					<img ng-src="{{item.src}}">
+				</div>
+				<div class="fl cart_goods_num">
+					<button class="fl" ng-click="operate($index,'sub')">-</button>
+					<div ng-bind="item.num" class="fl"></div>
+					<button  class="fl" ng-click="operate($index,'add')">+</button>
+				</div>
+				<div class="fl cart_goods_price">
+					<div ng-bind="item.total |currency:' ￥'"></div>
+				</div>
+				<button class="delete" ng-click="operate($index,'del')">X</button>
+			</div>
+		</div>
+		<div>
+			<div class="sum" ng-bind="sum|currency:' ￥'"></div>
+			<a href="/cart" class="account">结算</a>
+		</div>	
+	</div>
+</div>
+<div class="hr_30"></div>
+<div class="layout">
+	<div class="relate_goods fl clear_fix">
+		<div class="h2_wrap" my-location>
+			<h2>相关书籍推荐</h2>
+		</div>
+		<div class="relate_goods_box" ng-repeat="relate_goods in goods.relate">
+			<a ng-href="../goods/{{relate_goods.id}}" target="_blank"><div class="relate_goods_img"><img ng-src="../{{relate_goods.src}}"></div></a>
+			<div class="relate_goods_price">{{relate_goods.price | currency:"￥"}}</div>
+			<a ng-href="../goods/{{relate_goods.id}}" target="_blank"><div class="relate_goods_title">{{relate_goods.name}}</div></a>
+		</div>
+	</div>
+
+	<div class="goods_details_comment fr">
+		<div class="nav_bar" ng-class='{"pos_fix":nav_fix}'>
+			<ul >
+				<li ng-click="click_details()" ng-class="{'nav_btn_on':info_flag,'nav_btn_off':!info_flag}">商品详情</li>
+				<li ng-click="click_comment()" ng-class="{'nav_btn_on':!info_flag,'nav_btn_off':info_flag}">用户评价&nbsp;&nbsp;(&nbsp;{{goods.comment}}&nbsp;)</li>
+				<li id="none_li"></li>
+			</ul>
+		</div>
+
+		<div class="goods_details" ng-show="info_flag">
+			<div class="basic_info">
+				<h2>产品参数</h2>
+				<table>
+					<tr><td>产品名称：{{goods.basic.title}}</td><td>是否套装：{{goods.basic.packag}}</td><td>书名：{{goods.basic.name}}</td></tr>
+					<tr><td>定价：{{goods.basic.price}}</td><td>出版社：{{goods.basic.press}}</td><td>出版时间：{{goods.basic.press_time}}</td></tr>
+					<tr><td>作者：{{goods.basic.author}}</td><td>作者地区：{{goods.basic.block}}</td><td>开本：{{goods.basic.format}}</td></tr>
+				</table>
+			</div>
+			<div class="other_info">
+				<div class="details_img">
+					<img ng-src="../{{goods.src}}">
+				</div>
+				<div class="book_info">
+					<h2>书籍信息</h2>
+					<div ng-bind-html="goods.book_info"></div>
+				</div>
+				<div class="catalog">
+					<h2>目录</h2>
+					<div ng-bind-html="goods.catalog"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="consumer_comment">
+			<div class="good_comment_box">
+				<div class="good_comment"><span class="label">好评度&nbsp;&nbsp;</span><span class="num">{{goods.rate}}</span></div>
+			</div>
+			
+			
+			<div class="assess_box clear_fix" ng-repeat="assess in goods.assess">
+				<div class="fl people_box">
+					<img src="../assets/people.png"/>
+					<div class="comment_user">{{assess.user}}</div>	
+				</div>
+				<div class="fr comment_content">
+					<div class="content fl">
+						{{assess.content}}
+					</div>
+					<div class="time fr">
+						{{assess.time}}
+					</div>
+					<div class="arrow"></div>
+				</div>	
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+<script src="../js/goods.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="register">
+	<head>
+		<meta charset="utf-8" />
+		<title>注册</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico" />
+		<link rel="stylesheet" href="css/register.css"/>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/angular.min.js"></script>
+	</head>
+	<body>
+		<div class="layout">
+			<a href="/"><img src="assets/bookLogo.jpg" alt="logo"/></a>
+		</div>
+		<div class="main">
+			<div class="layout">
+				<div class="left">
+					<ul class="quotes">
+						<li>
+							<p class="content">读书破万卷，下笔如有神。</p>
+							<div class="author"> —— 杜甫</div>
+						</li>
+						<li>
+							<p class="content">腹有诗书气自华，读书万卷始通神。</p>
+							<div class="author">—— 苏轼</div>
+						</li>
+						<li>
+							<p class="content">喜爱读书，就等于把生活中寂寞无聊的时光换成巨大享受的时刻。</p>
+							<div class="author">—— 孟德斯鸠</div>
+						</li>
+					 
+						<li>
+							<p class="content">任何时候，我也不会满足，越是多读书，就越是深刻地感到不满足，越感到自己知识贫乏。科学是奥妙无穷的。</p>
+							<div class="author">—— 马克思</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right" >
+					<div class="register_wrap" ng-controller="registerCtrl">
+						<form>
+							<label>账号&nbsp;<input type="text" / name="name" ng-model="user.name"></label>
+							<label>密码&nbsp;<input type="password" name="password" ng-model="user.password"/></label>
+							<label>确认密码&nbsp;<input type="password" name="confirmPW" ng-model="confirmPW" /></label>
+							<button class="submit" ng-click="register()">注册</button>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<script>
+			angular.module("register",[])
+				.controller("registerCtrl",function($scope){
+					$scope.user={};
+					$scope.user.name="";
+					$scope.user.password="";
+					$scope.confirmPW="";
+					$scope.register=function(){
+						if($scope.user.password != $scope.confirmPW){
+							alert("确认密码要与密码相同");
+						}else{
+							var ajaxObj=JSON.stringify($scope.user);
+							$.post("http://127.0.0.1:3000/register",$scope.user,function(data,status){
+								if(data.flag){
+									alert("注册成功，请登录")
+									window.location.href=document.referrer;
+								}else{
+									alert("用户名已存在，注册失败");
+								}
+							})
+						}
+					}
+				})
+		</script>
+	</body>
+</html>

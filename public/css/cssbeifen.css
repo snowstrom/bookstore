@@ -1,0 +1,359 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 16px;
+}
+.clear_fix:after,.clear_fix::before {
+    content: "";
+    display: table;
+}
+.clear_fix:after{clear: both}
+.clear_fix {
+    zoom: 1;
+}
+.layout{
+    width: 1100px;
+    margin: 0 auto;
+    border-bottom: solid 1px #888888;
+    position: relative;
+}
+.layout::before,.layout::after,ul::before,ul::after{
+    content:"";
+    display: table;
+}
+.layout::after,ul::after{
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+ul,ol,li{
+    list-style: none;
+    margin-bottom: 0px;
+}
+a,a:link,a:visited,a:active{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.shortcut{
+    height: 30px;
+    line-height: 30px;
+    font-family: "Microsoft YaHei";
+    font-size:0.8em;
+}
+.shortcut .layout li{
+    float: left;
+    padding: 0 5px;
+}
+.logo_search{
+    font-family: "Microsoft YaHei";
+    font-size: 1em;
+}
+.logo_box{
+    padding-top: 40px;
+    padding-right: 60px;
+}
+.search_box{
+    padding-top: 40px;
+}
+.search_box input[name="search_word"]{
+    width: 500px;
+    height: 30px;
+    outline:none;
+    border: solid 2px red;
+    font-size: 1em;
+}
+.search_box input[type="submit"]{
+    height: 34px;
+    background-color: red;
+    padding: 0 10px;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    font-size: 1em;
+    outline: none;
+    border: none;
+}
+.search_box .keywords ul li{
+    float: left;
+    padding: 5px 5px;
+    font-size: 0.8em;
+    color: #333333;
+}
+.nav_main{
+    font-family: "Microsoft YaHei";
+    font-size: 1em;
+}
+.nav_main .category{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    z-index: 999;
+}
+.nav_main .category .h {
+    background-color: red;
+    color: #fff;
+    height: 40px;
+    padding-left: 20px;
+}
+.nav_main .category .h h2{
+    font-size: 1em;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.category .c{
+    padding-left: 20px;
+    background-color: #EEE;
+}
+.category-item{
+    padding: 10px 0;
+    z-index: 100;
+}
+.category-item h2{
+    font-size: 1em;
+    margin: 0;
+    padding: 5px 0;
+}
+.category-item ul li{
+    float: left;
+}
+.category-item ul li a{
+    font-size: 0.5em;
+    padding-right: 5px;
+    color: #888888;
+}
+.sub_category_item{
+    position: absolute;
+    left: 200px;
+    top: 40px;
+    height: 420px;
+    width: 300px;
+    display: none;
+    background-color: blue;
+}
+.category-item:hover .sub_category_item{
+    display: block;
+}
+.nav_main .nav{
+    padding-left:200px;
+    background-color: #333333;
+    height: 40px;
+}
+.nav_main .nav ul li{
+    float: left;
+    line-height: 40px;
+}
+.nav_main .nav ul li a{
+    color: #fff;
+    width: 100px;
+    padding: 10px 40px;
+}
+.nav_main .nav ul li a:hover{
+    background-color: #000;
+}
+.hot_board{
+    height: 425px;
+    border: solid red 1px;
+    margin-left: 200px;
+}
+.floor1 .h{
+    margin-top: 20px;
+    font-size: 1em;
+    font-family: "Microsoft YaHei";
+}
+.floor1 .h h2{
+    font-size: 1em;
+    padding: 0 5px;
+    margin: 0;
+    border-left: solid red 4px;
+    display: inline-block;
+}
+.floor1 .h small{
+    font-size: 0.5em;
+    color: #888888;
+}
+.floor1 .c{
+}
+
+.product_box{
+    box-sizing: border-box;
+    float: left;
+    padding: 20px;
+    width:275px;
+    height: 360px;
+    border: solid #eee 1px;
+}
+.product_box:hover{
+    border: solid red 1px;
+}
+.product_box .img{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.product_box img{
+    width:200px;
+    height:240px;
+}
+.price{
+    text-align: center;
+    color: red;
+    font-size: 1.2em;
+}
+.title{
+    font-family: "Microsoft YaHei";
+    text-align: center;
+}
+
+
+.goods_info{
+    height: 420px;
+}
+.area_l,.area_r{border: solid #aaa 1px}
+.area_l{
+    width: 360px;
+    border-right: none;
+}
+.goods_info .pic_box{
+    width: 300px;
+    height: 380px;
+    margin: 0 auto;
+}
+.pic_box img{
+    width: 300px;
+    height: 380px;
+}
+
+.area_r{
+    width: 490px;
+}
+.area_r h2{
+    font-size:  1.4em;
+    padding-left: 10px;
+}
+.area_r_center{
+    border-top: solid gray 1px;
+    border-bottom: solid gray 1px;
+    padding: 10px 20px;
+}
+.area_r ul li{
+    margin: 10px 0;
+    font-family: "Microsoft Sans Serif";
+}
+.info_label{
+    font-family:  tahoma,arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777;
+}
+.goods_price{
+    color: red;
+    font-size: 24px;
+    font-family: "Arial" ;
+    font-weight: lighter;
+}
+.goods_post,.goods_sail,.goods_comment,.goods_stock{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "Arial";
+}
+
+.shop_num{
+    width: 50px;
+}
+.buy{
+    margin-top: 8px;
+    padding: 20px;
+}
+.add_cart,.buy_now{
+    margin-left: 30px;
+    width: 150px;
+    height: 40px;
+}
+
+.area_r_cart{
+    width: 240px;
+    height: 420px;
+    padding: 10px;
+    border: solid gray 1px;
+    position: relative;
+}
+.area_r_cart button{
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+}
+
+
+.relate_goods{
+    width:300px ;
+    border: solid gray 1px;
+}
+.relate_goods h2{
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+}
+.relate_goods .relate_goods_img{
+    width: 260px;
+    margin: 5px auto;
+    border: solid gold 1px;
+}
+.relate_goods img{
+    width: 240px;
+    height: auto;
+}
+.relate_goods_price,.relate_goods_title{
+    text-align: center;
+}
+
+.goods_details_comment{
+    width: 760px;
+    height: 1000px;
+    border: solid 1px bisque;
+}
+
+.details_comment_nav {
+    height: 50px;
+    background: #eee;
+    color: red;
+}
+.details_comment_nav ul li{
+    float: left;
+    line-height: 50px;
+}
+.details_comment_nav ul li a{
+    margin: 0 30px;
+}
+
+.goods_details .basic_info{border: solid gainsboro 1px; padding: 10px 20px;}
+.goods_details .basic_info h2{
+    font-size: 14px;
+}
+.goods_details .basic_info table td{
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    padding: 5px 30px 5px 0;
+}
+
+.book_info{
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    padding: 10px 10px;
+    border-bottom: solid gray 1px;
+}
+.catalog{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    padding: 10px 10px;
+}

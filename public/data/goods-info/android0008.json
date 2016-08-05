@@ -1,0 +1,169 @@
+{
+	"id":"android0008",
+	"name":"疯狂Android讲义赠光盘（第3/三版） 安卓Android书籍教程 李刚 安卓编程 Android应用开发编程",
+	"src":"assets/index/android/android0008.jpg",
+	"price":72,
+	"post":0.00,
+	"sail":421,
+	"comment":26,
+	"stock":949,
+	"relate":[
+					{
+						"src":"assets/index/android/android0001.jpg",
+						"name":"Android基础教程(第4版)",
+						"price":37,
+						"id":"android0001"
+					},{
+						"src":"assets/index/android/android0003.jpg",
+						"name":"Android经典项目开发实战",
+						"price":67,
+						"id":"android0003"
+					},{
+						"src":"assets/index/android/android0004.jpg",
+						"name":"深入理解Android 5.0系统",
+						"price":81,
+						"id":"android0004"
+					},{
+						"src":"assets/index/android/android0005.jpg",
+						"name":"Android开发实战经典",
+						"price":47,
+						"id":"android0005"
+					},{
+						"src":"assets/index/android/android0006.jpg",
+						"name":"第一行代码-Android",
+						"price":52,
+						"id":"android0006"
+					},{
+						"src":"assets/index/android/android0007.jpg",
+						"name":"Android经典项目实例开发",
+						"price":62,
+						"id":"android0007"
+					},{
+						"src":"assets/index/android/android0002.jpg",
+						"name":"Android 从入门到精通",
+						"price":87,
+						"id":"android0002"
+					}
+			],
+	"basic":{
+				"title":"疯狂Android讲义(第3版)",
+				"packag":"否",
+				"name":"疯狂Android讲义(第3版)",
+				"price":"108.00元",
+				"press":"电子工业出版社",
+				"press_time":"2015/5/1",
+				"author":"李刚",
+				"block":"中国大陆",
+				"format":"16开"
+				},
+	"book_info":"移动互联网已经成为当今世界发展最快、市场潜力最大、前景最诱人的业务，而Android则是移动互联网上市场占有率最高的平台。<br/><br/>《疯狂Android讲义（第3版）》是《疯狂Android讲义》的第3版，《疯狂Android讲义（第3版）》基于最新的Android 5，并采用了Google推荐的IDE：Android Studio作为开发工具，书中每个案例、每个截图都全面升级到Android 5。《疯狂Android讲义（第3版）》全面介绍了Android应用开发的相关知识，全书内容覆盖了Android用户界面编程、Android四大 组件、Android资源访问、图形/图像处理、事件处理机制、Android输入/输出处理、音频/视频多媒体应用开发、OpenGL与3D应用开发、 网络通信编程、Android平台的Web Service、传感器应用开发、GPS应用开发、整合第三方Map服务等。<br/><br/>《疯狂Android讲义（第3版）》适合于有一定Java编程基础的读者。如果读者已熟练掌握Java编程语法，并具有一定的图形界面编程经验，阅读 《疯狂Android讲义（第3版）》将十分合适；否则，在阅读《疯狂Android讲义（第3版）》之前建议先认真阅读疯狂Java体系之《疯狂 Java讲义》。<br/>",
+	"catalog":"第1章 Android应用和开发环境 1<br/>1.1 Android的发展和历史 2<br/>1.1.1 Android的发展和简介 2<br/>1.1.2 Android 5.x平台架构及特性 3<br/>1.2 搭建Android开发环境 5<br/>1.2.1 安装Android Studio 5<br/>1.2.2 下载和安装Android SDK 8<br/>1.2.3 安装运行、调试环境 11<br/>1.3 Android常用开发工具的用法 16<br/>1.3.1 在命令行创建、删除和浏览AVD 16<br/>1.3.2 使用Android模拟器（Emulator） 17<br/>1.3.3 使用Monitor进行调试 18<br/>1.3.4 Android Debug Bridge（ADB）的用法 19<br/>1.3.5 使用mksdcard管理虚拟SD卡 20<br/>1.4 开始第一个Android应用 21<br/>1.4.1 使用Android Studio开发第一个Android应用 21<br/>1.4.2 通过Andorid Studio运行Android应用 24<br/>1.5 Android应用结构分析 25<br/>1.5.1 创建一个Android应用 25<br/>1.5.2 自动生成的R.java 28<br/>1.5.3 res目录说明 29<br/>1.5.4 Android应用的清单文件：AndroidManifest.xml 30<br/>1.5.5 应用程序权限说明 31<br/>1.6 Android应用的基本组件介绍 32<br/>1.6.1 Activity和View 32<br/>1.6.2 Service 33<br/>1.6.3 BroadcastReceiver 33<br/>1.6.4 ContentProvider 33<br/>1.6.5 Intent和IntentFilter 34<br/>1.7 签名Android应用程序 35<br/>1.7.1 使用Android Studio对Android应用签名 35<br/>1.7.2 使用命令对APK包签名 36<br/>1.8 本章小结 37<br/><br/>第2章 Android应用的界面编程 38<br/>2.1 界面编程与视图（View）组件 39<br/>2.1.1 视图组件与容器组件 39<br/>2.1.2 使用XML布局文件控制UI界面 44<br/>2.1.3 在代码中控制UI界面 44<br/>实例：用编程的方式开发UI界面 44<br/>2.1.4 使用XML布局文件和Java代码混合控制UI界面 46<br/>实例：简单图片浏览器 46<br/>2.1.5 开发自定义View 47<br/>实例：跟随手指的小球 48<br/>2.2 第1组UI组件：布局管理器 49<br/>2.2.1 线性布局 50<br/>2.2.2 表格布局 52<br/>实例：丰富的表格布局 53<br/>2.2.3 帧布局 55<br/>实例：霓虹灯效果 57<br/>2.2.4 相对布局 58<br/>实例：梅花布局效果 59<br/>2.2.5 网格布局 60<br/>实例：计算器界面 61<br/>2.2.6 绝对布局 62<br/>实例：登录界面 63<br/>2.3 第2组UI组件：TextView及其子类 64<br/>2.3.1 文本框（TextView）与编辑框（EditText）的功能和用法 64<br/>实例：不同颜色、字体、带链接的文本 67<br/>实例：圆角边框、渐变背景的TextView 68<br/>2.3.2 EditText的功能与用法 70<br/>实例：用户友好的输入界面 70<br/>2.3.3 按钮（Button）组件的功能与用法 72<br/>实例：按钮、圆形按钮、带文字的图片按钮 72<br/>2.3.4 使用9Patch图片作为背景 73<br/>2.3.5 单选钮（RadioButton）和复选框（CheckBox）的功能与用法 74<br/>实例：利用单选钮、复选框获取用户信息 75<br/>2.3.6 状态开关按钮（ToggleButton）和开关（Switch）的功能与用法 77<br/>实例：动态控制布局 77<br/>2.3.7 时钟（AnalogClock和TextClock）的功能与用法 79<br/>实例：手机里的“劳力士” 79<br/>2.3.8 计时器（Chronometer） 80<br/>2.4 第3组UI组件：ImageView及其子类 81<br/>实例：图片浏览器 83<br/>实例：强大的图片按钮 86<br/>实例：使用QuickContactBadge关联联系人 87<br/>2.5 第4组UI组件：AdapterView及子类 88<br/>2.5.1 列表视图（ListView）和ListActivity 89<br/>实例：改变分隔条、基于数组的ListView 90<br/>2.5.2 Adapter接口及实现类 91<br/>实例：使用ArrayAdapter创建ListView 91<br/>实例：基于ListActivity实现列表 93<br/>实例：使用SimpleAdapter创建ListView 94<br/>实例：扩展BaseAdapter实现不存储列表项的ListView 97<br/>2.5.3 自动完成文本框（AutoCompleteTextView）的功能与用法 98<br/>2.5.4 网格视图（GridView）的功能与用法 100<br/>实例：带预览的图片浏览器 101<br/>2.5.5 可展开的列表组件（ExpandableListView） 103<br/>2.5.6 Spinner的功能与用法 106<br/>实例：让用户选择 106<br/>2.5.7 AdapterViewFlipper的功能与用法 108<br/>实例：自动播放的图片库 108<br/>2.5.8 StackView的功能与用法 111<br/>实例：叠在一起的图片 111<br/>2.6 第5组UI组件：ProgressBar及其子类 112<br/>2.6.1 进度条（ProgressBar）的功能与用法 113<br/>实例：显示在标题上的进度条 116<br/>2.6.2 拖动条（SeekBar）的功能与用法 117<br/>实例：通过拖动滑块来改变图片的透明度 117<br/>2.6.3 星级评分条（RatingBar）的功能与用法 118<br/>实例：通过星级改变图片的透明度 119<br/>2.7 第6组UI组件：ViewAnimator及其子类 120<br/>2.7.1 ViewSwitcher的功能与用法 120<br/>实例：仿Android系统Launcher界面 120<br/>2.7.2 图像切换器（ImageSwitcher）的功能与用法 125<br/>实例：支持动画的图片浏览器 125<br/>2.7.3 文本切换器（TextSwitcher）的功能与用法 127<br/>2.7.4 ViewFlipper的功能与用法 129<br/>实例：自动播放的图片库 129<br/>2.8 各种杂项组件 131<br/>2.8.1 使用Toast显示提示信息框 131<br/>实例：带图片的消息提示 131<br/>2.8.2 日历视图（CalendarView）组件的功能和用法 133<br/>实例：选择您的生日 133<br/>2.8.3 日期、时间选择器（DatePicker和TimePicker）的功能和用法 134<br/>实例：用户选择日期、时间 135<br/>2.8.4 数值选择器（NumberPicker）的功能与用法 137<br/>实例：选择您意向的价格范围 137<br/>2.8.5 搜索框（SearchView）的功能与用法 139<br/>实例：搜索 139<br/>2.8.6 选项卡（TabHost）的功能和用法 141<br/>实例：通话记录界面 141<br/>2.8.7 滚动视图（ScrollView）的功能和用法 143<br/>实例：可垂直和水平滚动的视图 144<br/>2.8.8 Notification的功能与用法 144<br/>实例：加薪通知 145<br/>2.9 第7组UI组件：对话框 146<br/>2.9.1 使用AlertDialog创建对话框 147<br/>实例：显示提示消息的对话框 147<br/>实例：简单列表项对话框 149<br/>实例：单选列表项对话框 149<br/>实例：多选列表项对话框 150<br/>实例：自定义列表项对话框 151<br/>实例：自定义View对话框 152<br/>2.9.2 对话框风格的窗口 154<br/>2.9.3 使用PopupWindow 155<br/>2.9.4 使用DatePickerDialog、TimePickerDialog 156<br/>2.9.5 使用ProgressDialog创建进度对话框 158<br/>2.10 菜单 160<br/>2.10.1 选项菜单和子菜单（SubMenu） 161<br/>2.10.2 使用监听器来监听菜单事件 164<br/>2.10.3 创建多选菜单项和单选菜单项 164<br/>2.10.4 设置与菜单项关联的Activity 165<br/>2.10.5 上下文菜单 166<br/>2.10.6 使用XML文件定义菜单 167<br/>实例：使用XML资源文件定义菜单 168<br/>2.10.7 使用PopupMenu创建弹出式菜单 171<br/>2.11 使用活动条（ActionBar） 173<br/>2.11.1 启用ActionBar 173<br/>2.11.2 使用ActionBar显示选项菜单项 174<br/>2.11.3 启用程序图标导航 176<br/>2.11.4 添加Action View 177<br/>实例：“标题”上的时钟 177<br/>2.11.5 使用ActionBar实现Tab导航 178<br/>实例：ActionBar结合Fragment实现Tab导航 179<br/>实例：Android 3.0以前的Fragment支持 182<br/>2.11.6 使用ActionBar实现下拉式导航 185<br/>实例：ActionBar结合Fragment实现下拉式导航 185<br/>2.12 本章小结 187<br/>第3章 Android的事件处理 188<br/>3.1 Android事件处理概述 189<br/>3.2 基于监听的事件处理 189<br/>3.2.1 监听的处理模型 189<br/>3.2.2 事件和事件监听器 192<br/>实例：控制飞机移动 192<br/>3.2.3 内部类作为事件监听器类 195<br/>3.2.4 外部类作为事件监听器类 195<br/>3.2.5 Activity本身作为事件监听器类 197<br/>3.2.6 匿名内部类作为事件监听器类 197<br/>3.2.7 直接绑定到标签 198<br/>3.3 基于回调的事件处理 199<br/>......<br/>",
+	"rate":"96%",
+	"assess":[
+				{
+					"user":"aaaaa",
+					"time":"2015-06-28 17:34:43",
+					"content":"与我之前看到的评价不同，我收到的这书简直包装完美，印刷完美，纸质完美。而且内容丰富，讲的特别详细。绝对值这个价"
+				},{
+					"user":"bbbbb",
+					"time":"2015-06-28 17:34:43",
+					"content":"很棒的一本书！之前看了评论有点不敢买还特地去了新华书店，但是新华书店的也是没有塑封而且还破，关键还128。这本书的顺序和我现在用的两本教材都不一样，感觉这样的排版又新鲜又有乐趣，好评"
+				},{
+					"user":"ccccc",
+					"time":"2015-06-28 17:34:43",
+					"content":"很好，正版，很有分量，当然就像其他人说的，包装不会很仔细，不过书籍也没事，我买了三本就是放在一个纸箱里的，运来也还好，没有损坏 服务很好"
+				},{
+					"user":"ddddd",
+					"time":"2015-06-28 17:34:43",
+					"content":"书看起来像正版的，质量很好，包装也很好，物流给力，夜里拍的，夜里就发货了，第二天就到了，好评，下次买书就在这家买了"
+				},{
+					"user":"eeeee",
+					"time":"2015-06-28 17:34:43",
+					"content":"书很好，印刷很清晰，看着挺舒服的?好评"
+				},{
+					"user":"fffff",
+					"time":"2015-06-28 17:34:43",
+					"content":"书挺好的，包装就一层塑料纸，还好没破。物流很快，第二天就到了"
+				},{
+					"user":"ggggg",
+					"time":"2015-06-28 17:34:43",
+					"content":"好书，是正品，送货挺快的，不得不给一个五星好评。"
+				},{
+					"user":"hhhhh",
+					"time":"2015-06-28 17:34:43",
+					"content":"很好很好很好 很好很好很好 很好很好很好，是正品，就是书的外封皮有些破损，但完全不影响使用"
+				},{
+					"user":"iiiii",
+					"time":"2015-06-28 17:34:43",
+					"content":"物流很给力。转天就送到了。书没破损。内容我看不懂。但是我弟弟说挺好的。所以给的五星。"
+				},{
+					"user":"jjjjj",
+					"time":"2015-06-28 17:34:43",
+					"content":"字迹清晰，很好，纸张结实，讲的也是详细，例子还可以"
+				},{
+					"user":"kkkkk",
+					"time":"2015-06-28 17:34:43",
+					"content":"当当的物流一如既往的好！！赞！！！！！！！书也很不错，就是书的包装显得扣，不说了，学习去了！"
+				},{
+					"user":"lllll",
+					"time":"2015-06-28 17:34:43",
+					"content":"相当不错，绝对正版，很厚，肯定对学习特别有帮助，赞"
+				},{
+					"user":"mmmmm",
+					"time":"2015-06-28 17:34:43",
+					"content":"发票拖了半月才发，这效率还是别来坑人"
+				},{
+					"user":"nnnnn",
+					"time":"2015-06-28 17:34:43",
+					"content":"书没有损坏，其实也没有评论里说的那么严重，快递本来想给4星，但最后看快递员是个老大爷，心一酸，觉得谁都不容易啊，给5星"
+				},{
+					"user":"ooooo",
+					"time":"2015-06-28 17:34:43",
+					"content":"快递很快，隔天就到了，但是书右上角有折痕，而且不止一页。包装太简陋了，亲爱的店主你这是走贵书高冷风格吗，人靠衣装，书靠包装。虽说书的内容很精华，但是书这么厚不包装很容易折到。你让我这个强迫症情何以堪。"
+				},{
+					"user":"ppppp",
+					"time":"2015-06-28 17:34:43",
+					"content":"货收到了，快递很快，虽然包装不太好，书有划痕，但是里面是好的，没完美强迫症，可以看，是正版，纸张很好，想学知识的就别在意那么多不重要的细节了。好评。"
+				},{
+					"user":"qqqqq",
+					"time":"2015-06-28 17:34:43",
+					"content":"包装太寒酸了，不过还好书没有任何损伤，斥巨资买的书我要刷一波c"
+				},{
+					"user":"rrrrr",
+					"time":"2015-06-28 17:34:43",
+					"content":"为什么不用纸皮包一下，我拿到时你们的塑料袋包装都破了"
+				},{
+					"user":"sssss",
+					"time":"2015-06-28 17:34:43",
+					"content":"正版书，就是包装太一般了，封面上有印子"
+				},{
+					"user":"ttttt",
+					"time":"2015-06-28 17:34:43",
+					"content":"就包了一个袋………完全不知道爱护书籍，这个好评我是刷我的评价的"
+				},{
+					"user":"uuuuu",
+					"time":"2015-06-28 17:34:43",
+					"content":"包装真心破，像我这种经常在书上画娃娃的人都看不下去了，就一个快递袋，里面装了一本书，关键是快递袋还破了，其实你把包装搞好一点，加价5块钱我都可以接收。。。"
+				},{
+					"user":"vvvvv",
+					"time":"2015-06-28 17:34:43",
+					"content":"相当快啊，就是跑好远去取的。纸张特别好，很重。超值的。"
+				},{
+					"user":"wwwww",
+					"time":"2015-06-28 17:34:43",
+					"content":"发货很快，晚上11点多下的单，第二天上午就到了，目测是正版的，从纸张、印刷质量来看都还行"
+				},{
+					"user":"xxxxx",
+					"time":"2015-06-28 17:34:43",
+					"content":"速度很快，昨天晚上订的今天中午就到了，只可惜书并不是塑胶封的，磨损比较严重"
+				},{
+					"user":"yyyyy",
+					"time":"2015-06-28 17:34:43",
+					"content":"是很好，就是被压了。书边有折痕，对于有强迫症的我来说心里不好受，"
+				},{
+					"user":"zzzzz",
+					"time":"2015-06-28 17:34:43",
+					"content":"正在看，书的质量还不错，就是太难了，慢慢学哈哈"
+				}
+			]
+}

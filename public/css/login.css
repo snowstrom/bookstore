@@ -1,0 +1,94 @@
+body{
+    font-size: 62.5%
+}
+.layout{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.layout::before,.layout::after,ul::before,ul::after,.clear_fix:after,.clear_fix::before{
+    content:"";
+    display: table;
+}
+.layout::after,ul::after,.clear_fix:after{
+    clear: both;
+}
+.clear_fix,.layout {
+    zoom: 1;
+}
+ img{
+	width:200px;
+	height:110px;
+}
+ .main{
+	min-width:1100px;
+	height:450px;	
+	background-color:#f7f7f7;
+ }
+ .left{
+	box-sizing:border-box;
+	width:700px;
+	float:left;
+	border-right:1px solid #dedede;
+ }
+.right{
+	box-sizing:border-box;
+	width:400px;
+	float:left;
+ }
+.quotes{
+	list-style:none;
+	font-size:1.8em;
+}
+.author{
+	padding-right:50px;
+	text-align:right;
+}
+.login_wrap{
+	width: 300px;
+	margin:100px auto;
+}
+.login_wrap label{
+	display:block;
+	font-size:1.4em;
+	margin-bottom:18px;
+}
+.login_wrap input{
+	outline:none;
+	height:26px;
+	width:250px;
+font-size:1em;
+}
+
+.submit{
+	float:right;
+	clear:both;
+	width:60px;
+	height:30px;
+	margin:10px 0;
+	border-radius:3px;
+	outline:none;
+	color:#fff;
+	border:1px solid #BA350F;
+	background-color: #BA350F;
+	font:500 1.4em 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+}
+button.submit:hover{
+	cursor:pointer;
+	background-color: #D5434A;
+}
+button.submit:active{
+    background-color: #BA350F;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 

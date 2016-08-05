@@ -1,0 +1,169 @@
+{
+	"id":"android0005",
+	"name":"Android开发实战经典 畅销书籍 计算机 正版Android开发实战经典(附光盘)/名师讲坛",
+	"src":"assets/index/android/android0005.jpg",
+	"price":47,
+	"post":0.00,
+	"sail":521,
+	"comment":26,
+	"stock":99,
+	"relate":[
+					{
+						"src":"assets/index/android/android0001.jpg",
+						"name":"Android基础教程(第4版)",
+						"price":37,
+						"id":"android0001"
+					},{
+						"src":"assets/index/android/android0003.jpg",
+						"name":"Android经典项目开发实战",
+						"price":67,
+						"id":"android0003"
+					},{
+						"src":"assets/index/android/android0004.jpg",
+						"name":"深入理解Android 5.0系统",
+						"price":81,
+						"id":"android0004"
+					},{
+						"src":"assets/index/android/android0002.jpg",
+						"name":"Android 从入门到精通",
+						"price":87,
+						"id":"android0002"
+					},{
+						"src":"assets/index/android/android0006.jpg",
+						"name":"第一行代码-Android",
+						"price":52,
+						"id":"android0006"
+					},{
+						"src":"assets/index/android/android0007.jpg",
+						"name":"Android经典项目实例开发",
+						"price":62,
+						"id":"android0007"
+					},{
+						"src":"assets/index/android/android0008.jpg",
+						"name":"疯狂Android讲义",
+						"price":72,
+						"id":"android0008"
+					}
+			],
+	"basic":{
+				"title":"Android开发实战经典(附光...",
+				"packag":"否",
+				"name":"Android开发实战经典(附光盘)/名师",
+				"price":"88.0元",
+				"press":"清华大学出版社",
+				"press_time":"2012年03月",
+				"author":"李兴华",
+				"block":"中国大陆",
+				"format":"16开"
+				},
+	"book_info":"《名师讲坛——android开发实战经典》从初学者的角度，以丰富的实例、案例，通俗易懂的语言，简单的图示，系统全面地讲述了android开发中应用的技术。全书共分为13章，包括认识android、搭建android开发环境、初识activity、android中的基本控件（上）、布局管理器、android事件处理、android中的基本控件（下）、数据存储、android组件通信、多媒体技术、手机服务、网络通信、定位服务等内容。 <br/><br/>《名师讲坛——android开发实战经典》提供了大量的小实例、案例、示意图，方便读者快速理解和应用，随书附带长达50多小时的教学视频和ppt电子教案，另外还专门提供了bbs论坛为读者解答问题。《名师讲坛——android开发实战经典》作者有多年的开发和教学经验，愿意成为读者的良师益友。<br/><br/>《名师讲坛——android开发实战经典》适合每一位从事android开发的技术人员，也适合作为培训中心、计算机相关专业的参考书。<br/><br/>李兴华，知名Java培训讲师，Android培训讲师，Java EE高端培训讲师，北京魔乐科技（MLDN）软件实训中心教学总监、首席讲师，赛迪网职业特约讲师，51CTO知名专家。8年软件开发经验，6年高端培训经验，先后为50多家大中型企业做过培训，在Java以及目前的3G/4G培训方面享有很高的知名度。<br/>",
+	"catalog":"第1部分  走进Android的世界 <br/>第1章  认识Android 2 <br/>1.1  智能手机的发展 2 <br/>1.2  手机操作系统   3 <br/>1.3  走进Android    5 <br/>1.4  Android的体系结构  8 <br/>1.5  Android应用程序框架    10 <br/>1.6  本章小结   11 <br/>第2章  搭建Android开发环境 12 <br/>2.1  下载并配置Android开发环境 12 <br/>2.2  下载并配置ADT插件 15 <br/>2.3  开发**个Android项目 22 <br/>2.4  打包Android程序   25 <br/>2.5  本章小结   27 <br/><br/><br/>第2部分  Activity程序开发 <br/>第3章  初识Activity    30 <br/>3.1  Activity简介   30 <br/>3.2  Android项目工作区的组成    31 <br/>3.3  **个Android程序 36 <br/>3.4  **个Android程序深入 41 <br/>3.5  本章小结   43 <br/>第4章  Android中的基本控件（上）   44 <br/>4.1  View组件简介   44 <br/>4.2  文本显示组件：TextView 46 <br/>4.3  按钮组件：Button   51 <br/>4.4  编辑框：EditText   53 <br/>4.5  单选按钮：RadioGroup   55 <br/>4.6  复选框：CheckBox   57 <br/>4.7  下拉列表框：Spinner    59 <br/>4.8  图片视图：ImageView    64 <br/>4.9  图片按钮：ImageButton  65 <br/>4.10  时间选择器：TimePicker    66 <br/>4.11  日期选择器：DatePicker    68 <br/>4.12  本章小结  71 <br/>第5章  布局管理器  72 <br/>5.1  Android布局管理器简介  72 <br/>5.2  线性布局管理器：LinearLayout   73 <br/>5.3  框架布局管理器：FrameLayout    75 <br/>5.4  表格布局管理器：TableLayout    77 <br/>5.5  相对布局管理器：RelativeLayout 84 <br/>5.6  布局管理器的嵌套   86 <br/>5.7  优势地位定位布局管理器：AbsoluteLayout 88 <br/>5.8  本章小结   90 <br/>第6章  Android事件处理 91 <br/>6.1  事件处理简介   91 <br/>6.2  单击事件   93 <br/>6.2.1  认识单击事件 93 <br/>6.2.2  实例1：简单的四则运算    96 <br/>6.2.3  实例2：改变屏幕显示方向  100 <br/>6.2.4  实例3：明文显示密码  104 <br/>6.3  单选按钮与OnCheckedChangeListener  106 <br/>6.4  下拉列表框与OnItemSelectedListener 108 <br/>6.5  监听日期与时间的改变   112 <br/>6.6  焦点事件   115 <br/>6.7  长按事件   117 <br/>6.8  键盘事件   119 <br/>6.9  触摸事件   121 <br/>6.10  本章小结  125 <br/>第7章  Android中的基本控件（下）   126 <br/>7.1  滚动视图：ScrollView   126 <br/>7.2  列表显示：ListView 128 <br/>7.2.1  ListView组件的基本使用   128 <br/>7.2.2  SimpleAdapter类  130 <br/>7.2.3  ListActivity类   136 <br/>7.2.4  ListView事件处理 139 <br/>7.3  对话框：Dialog 143 <br/>7.3.1  AlertDialog和AlertDialog.Builder   144 <br/>7.3.2  定制对话框和LayoutInflater   157 <br/>7.3.3  日期对话框：DatePickerDialog 159 <br/>7.3.4  时间对话框：TimePickerDialog 161 <br/>7.3.5  进度处理对话框：ProgressDialog   164 <br/>7.4  随笔提示文本：AutoCompleteTextView 168 <br/>7.5  拖动条：SeekBar    170 <br/>7.6  评分组件：RatingBar    176 <br/>7.7  信息提示框：Toast  182 <br/>7.8  图片切换：ImageSwitcher    186 <br/>7.9  文本切换：TextSwitcher 191 <br/>7.10  拖拉图片：Gallery 193 <br/>7.11  网格视图：GridView    201 <br/>7.12  时钟组件：AnalogClock与DigitalClock  206 <br/>7.13  计时器：Chronometer   207 <br/>7.14  标签：TabHost 213 <br/>7.15  菜单：Menu    223 <br/>7.15.1  选项菜单：OptionsMenu   225 <br/>7.15.2  上下文菜单：ContextMenu 229 <br/>7.15.3  子菜单：SubMenu 231 <br/>7.16  隐式抽屉组件：SlidingDrawer   234 <br/>7.17  缩放控制：ZoomControls    237 <br/>7.18  弹出窗口：PopupWindow 239 <br/>7.19  树型组件：ExpandableListView  243 <br/>7.20  本章小结  250 <br/><br/><br/>第3部分  Android高级开发 <br/>第8章  数据存储    252 <br/>8.1 & <br/>......<br/>",
+	"rate":"91%",
+	"assess":[
+				{
+					"user":"aaaaa",
+					"time":"2015-06-28 17:34:43",
+					"content":"与我之前看到的评价不同，我收到的这书简直包装完美，印刷完美，纸质完美。而且内容丰富，讲的特别详细。绝对值这个价"
+				},{
+					"user":"bbbbb",
+					"time":"2015-06-28 17:34:43",
+					"content":"很棒的一本书！之前看了评论有点不敢买还特地去了新华书店，但是新华书店的也是没有塑封而且还破，关键还128。这本书的顺序和我现在用的两本教材都不一样，感觉这样的排版又新鲜又有乐趣，好评"
+				},{
+					"user":"ccccc",
+					"time":"2015-06-28 17:34:43",
+					"content":"很好，正版，很有分量，当然就像其他人说的，包装不会很仔细，不过书籍也没事，我买了三本就是放在一个纸箱里的，运来也还好，没有损坏 服务很好"
+				},{
+					"user":"ddddd",
+					"time":"2015-06-28 17:34:43",
+					"content":"书看起来像正版的，质量很好，包装也很好，物流给力，夜里拍的，夜里就发货了，第二天就到了，好评，下次买书就在这家买了"
+				},{
+					"user":"eeeee",
+					"time":"2015-06-28 17:34:43",
+					"content":"书很好，印刷很清晰，看着挺舒服的?好评"
+				},{
+					"user":"fffff",
+					"time":"2015-06-28 17:34:43",
+					"content":"书挺好的，包装就一层塑料纸，还好没破。物流很快，第二天就到了"
+				},{
+					"user":"ggggg",
+					"time":"2015-06-28 17:34:43",
+					"content":"好书，是正品，送货挺快的，不得不给一个五星好评。"
+				},{
+					"user":"hhhhh",
+					"time":"2015-06-28 17:34:43",
+					"content":"很好很好很好 很好很好很好 很好很好很好，是正品，就是书的外封皮有些破损，但完全不影响使用"
+				},{
+					"user":"iiiii",
+					"time":"2015-06-28 17:34:43",
+					"content":"物流很给力。转天就送到了。书没破损。内容我看不懂。但是我弟弟说挺好的。所以给的五星。"
+				},{
+					"user":"jjjjj",
+					"time":"2015-06-28 17:34:43",
+					"content":"字迹清晰，很好，纸张结实，讲的也是详细，例子还可以"
+				},{
+					"user":"kkkkk",
+					"time":"2015-06-28 17:34:43",
+					"content":"当当的物流一如既往的好！！赞！！！！！！！书也很不错，就是书的包装显得扣，不说了，学习去了！"
+				},{
+					"user":"lllll",
+					"time":"2015-06-28 17:34:43",
+					"content":"相当不错，绝对正版，很厚，肯定对学习特别有帮助，赞"
+				},{
+					"user":"mmmmm",
+					"time":"2015-06-28 17:34:43",
+					"content":"发票拖了半月才发，这效率还是别来坑人"
+				},{
+					"user":"nnnnn",
+					"time":"2015-06-28 17:34:43",
+					"content":"书没有损坏，其实也没有评论里说的那么严重，快递本来想给4星，但最后看快递员是个老大爷，心一酸，觉得谁都不容易啊，给5星"
+				},{
+					"user":"ooooo",
+					"time":"2015-06-28 17:34:43",
+					"content":"快递很快，隔天就到了，但是书右上角有折痕，而且不止一页。包装太简陋了，亲爱的店主你这是走贵书高冷风格吗，人靠衣装，书靠包装。虽说书的内容很精华，但是书这么厚不包装很容易折到。你让我这个强迫症情何以堪。"
+				},{
+					"user":"ppppp",
+					"time":"2015-06-28 17:34:43",
+					"content":"货收到了，快递很快，虽然包装不太好，书有划痕，但是里面是好的，没完美强迫症，可以看，是正版，纸张很好，想学知识的就别在意那么多不重要的细节了。好评。"
+				},{
+					"user":"qqqqq",
+					"time":"2015-06-28 17:34:43",
+					"content":"包装太寒酸了，不过还好书没有任何损伤，斥巨资买的书我要刷一波c"
+				},{
+					"user":"rrrrr",
+					"time":"2015-06-28 17:34:43",
+					"content":"为什么不用纸皮包一下，我拿到时你们的塑料袋包装都破了"
+				},{
+					"user":"sssss",
+					"time":"2015-06-28 17:34:43",
+					"content":"正版书，就是包装太一般了，封面上有印子"
+				},{
+					"user":"ttttt",
+					"time":"2015-06-28 17:34:43",
+					"content":"就包了一个袋………完全不知道爱护书籍，这个好评我是刷我的评价的"
+				},{
+					"user":"uuuuu",
+					"time":"2015-06-28 17:34:43",
+					"content":"包装真心破，像我这种经常在书上画娃娃的人都看不下去了，就一个快递袋，里面装了一本书，关键是快递袋还破了，其实你把包装搞好一点，加价5块钱我都可以接收。。。"
+				},{
+					"user":"vvvvv",
+					"time":"2015-06-28 17:34:43",
+					"content":"相当快啊，就是跑好远去取的。纸张特别好，很重。超值的。"
+				},{
+					"user":"wwwww",
+					"time":"2015-06-28 17:34:43",
+					"content":"发货很快，晚上11点多下的单，第二天上午就到了，目测是正版的，从纸张、印刷质量来看都还行"
+				},{
+					"user":"xxxxx",
+					"time":"2015-06-28 17:34:43",
+					"content":"速度很快，昨天晚上订的今天中午就到了，只可惜书并不是塑胶封的，磨损比较严重"
+				},{
+					"user":"yyyyy",
+					"time":"2015-06-28 17:34:43",
+					"content":"是很好，就是被压了。书边有折痕，对于有强迫症的我来说心里不好受，"
+				},{
+					"user":"zzzzz",
+					"time":"2015-06-28 17:34:43",
+					"content":"正在看，书的质量还不错，就是太难了，慢慢学哈哈"
+				}
+			]
+}

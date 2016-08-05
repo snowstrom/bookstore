@@ -1,0 +1,170 @@
+{
+	"id":"android0004",
+	"name":"深入解析Android 5.0系统Android实用教程",
+	"src":"assets/index/android/android0004.jpg",
+	"price":81,
+	"post":0.00,
+	"sail":121,
+	"comment":26,
+	"stock":79,
+	"relate":[
+					{
+						"src":"assets/index/android/android0001.jpg",
+						"name":"Android基础教程(第4版)",
+						"price":37,
+						"id":"android0001"
+					},{
+						"src":"assets/index/android/android0003.jpg",
+						"name":"Android经典项目开发实战",
+						"price":67,
+						"id":"android0003"
+					},{
+						"src":"assets/index/android/android0002.jpg",
+						"name":"Android 从入门到精通",
+						"price":87,
+						"id":"android0002"
+					},{
+						"src":"assets/index/android/android0005.jpg",
+						"name":"Android开发实战经典",
+						"price":47,
+						"id":"android0005"
+					},{
+						"src":"assets/index/android/android0006.jpg",
+						"name":"第一行代码-Android",
+						"price":52,
+						"id":"android0006"
+					},{
+						"src":"assets/index/android/android0007.jpg",
+						"name":"Android经典项目实例开发",
+						"price":62,
+						"id":"android0007"
+					},{
+						"src":"assets/index/android/android0008.jpg",
+						"name":"疯狂Android讲义",
+						"price":72,
+						"id":"android0008"
+					}
+			],
+	"basic":{
+				"title":"深入理解Andriod 5.0系统",
+				"packag":"否",
+				"name":"深入理解Andriod 5.0系统",
+				"price":"99.00元",
+				"press":"人民邮电出版社",
+				"press_time":"2015年4月",
+				"author":"刘超",
+				"block":"中国大陆",
+				"format":"16开"
+				},
+	"book_info":"《深入解析Android 5.0系统》详细剖析了最新Android 5.0 系统主要框架的原理和具体实现。本书共24章，覆盖了Android 5.0 系统中、下层重要的模块，对于每个模块都详细介绍了它们的架构、原理及代码实现等各个方面，尽量让读者知其然，又知其所以然，达到学以致用的目的。主要内容为：<br/><br/>Android Build系统核心、Android的Bionic、系统调用的实现方法、Android的Binder、Binder应用层的核心类、Android 的JNI、Android的同步和消息机制、进程间的消息传递、Android的Init进程、Android的Zygote进程、Android的资源管理、Android的SystemServer进程、Android的应用管理、Android的组件管理、Android的多用户模式、Android的图形显示系统、Android的窗口系统、Android 的输入管理、Android的电源管理、Android的存储系统、Android的网络管理框架、Android的音频系统、Android的SELinux模块、Dalvik和ART虚拟机、Android的Recovery模块、Android的调试方法、内存泄露的分析、Android的自动化测试等系统的核心知识。<br/><br/>在书中尽可能详细地给出了代码的注释、各种属性和常量的解释，以及各种系统中使用的文件格式的介绍，希望读者能通过本书，获得对Android 5.0系统进行二次开发的能力，本书是进行系统开发人员的案头必备书。<br/><br/>《深入解析Android 5.0系统》面向的读者主要是进行系统开发的工程师，包括应用开发工程师、ROM开发工程师和各种使用Android作为开发平台的TV和可穿戴式设备(Wear)的开发工程师。本书也可以作为大专院校相关专业师生的学习用书及培训学校教材。<br/>",
+	"catalog":"第1章 建立Android系统开发环境 <br/><br/>1.1 安装操作系统 <br/><br/>1.1.1 安装方式的选择 <br/><br/>1.1.2 下载和安装Ubuntu <br/><br/>1.1.3 使用Ubuntu遇到的问题 <br/><br/>1.2 安装开发包 <br/><br/>1.2.1 安装JDK 1.6 <br/><br/>1.2.2 安装OpenJDK 1.7 <br/><br/>1.2.3 安装编译需要的开发包 <br/><br/>1.3 安装一些有用的工具 <br/><br/>1.3.1 安装Android SDK <br/><br/>1.3.2 安装Android Studio <br/><br/>1.3.3 安装Source Insight <br/><br/>1.3.4 安装比较工具Meld <br/><br/>1.4 下载源码 <br/><br/>1.4.1 Git and Repo简介 <br/><br/>1.4.2 源码版本历史 <br/><br/>1.4.3 下载Android源码 <br/><br/>1.4.4 下载Kernel源码 <br/><br/>第2章 Android的编译环境——<br/><br/>Build系统 <br/><br/>2.1 Android Build系统核心 <br/><br/>2.1.1 编译环境的建立 <br/><br/>2.1.2 Build相关的环境变量 <br/><br/>2.1.3 Build系统的层次关系 <br/><br/>2.1.4 分析main.mk文件 <br/><br/>2.1.5 Build系统的编译目标<br/><br/>介绍 <br/><br/>2.1.6 分析config.mk文件 <br/><br/>2.1.7 分析product_config.mk<br/><br/>文件 <br/><br/>2.1.8 Android 5.0中的64位<br/><br/>编译 <br/><br/>2.2 Android的产品配置文件 <br/><br/>2.2.1 分析hammerhead的配置<br/><br/>文件 <br/><br/>2.2.2 编译类型eng、user和<br/><br/>userdebug <br/><br/>2.2.3 产品的Image文件 <br/><br/>2.2.4 如何加快编译速度 <br/><br/>2.2.5 如何编译Android的<br/><br/>模拟器 <br/><br/>2.3 编译Android的模块 <br/><br/>2.3.1 模块编译变量简介 <br/><br/>2.3.2 常用模块定义实例 <br/><br/>2.3.3 预编译模块的目标定义 <br/><br/>2.3.4 常用“LOCAL_”变量 <br/><br/>2.4 Android中的签名 <br/><br/>2.4.1 Android应用签名方法 <br/><br/>2.4.2 Android系统签名介绍 <br/><br/>2.4.3 Android签名漏洞分析 <br/><br/>第3章 连接Android和Linu内核的<br/><br/>桥梁——Android的Bionic <br/><br/>3.1 Bionic简介 <br/><br/>3.1.1 Bionic的特性 <br/><br/>3.1.2 Bionic中的模块简介 <br/><br/>3.2 Bionic C库中的系统调用 <br/><br/>3.2.1 系统调用简介 <br/><br/>3.2.2 系统调用的实现方法 <br/><br/>3.3 Bionic中的内存管理函数 <br/><br/>3.3.1 系统调用brk和mmap <br/><br/>3.3.2 内存分配器——dlmalloc<br/><br/>简介 <br/><br/>3.3.3 dlmalloc函数用法指南 <br/><br/>3.4 管道 <br/><br/>3.4.1 匿名管道PIPE和命名<br/><br/>管道FIFO <br/><br/>3.4.2 匿名管道的使用方法 <br/><br/>3.5 Bionic中的线程管理函数 <br/><br/>3.5.1 Bionic线程函数的特性 <br/><br/>3.5.2 创建线程和线程的属性 <br/><br/>3.5.3 退出线程的方法 <br/><br/>3.5.4 线程本地存储TLS <br/><br/>3.5.5 线程的互斥量（Mutex）<br/><br/>函数 <br/><br/>3.5.6 线程的条件量（Condition）<br/><br/>函数 <br/><br/>3.6 Futex同步机制 <br/><br/>3.6.1 Futex的系统调用 <br/><br/>3.6.2 Futex的用户态操作 <br/><br/>3.6.3 Mutex类使用Futex<br/><br/>实现同步 <br/><br/>3.7 Android的 Log模块 <br/><br/>3.7.1 Android Log系统的架构 <br/><br/>3.7.2 Log系统的接口和用法 <br/><br/>3.7.3 Log系统的实现分析 <br/><br/>3.8 可执行文件格式分析 <br/><br/>3.8.1 ELF格式简介 <br/><br/>3.8.2 ELF文件头格式 <br/><br/>3.8.3 程序头部表 <br/><br/>3.8.4 与重定位相关的“节区”的<br/><br/>信息——DYNAMIC段 <br/><br/>3.8.5 函数的重定位过程 <br/><br/>3.9 Bionic中的Linker模块 <br/><br/>3.9.1 可执行程序的装载 <br/><br/>3.9.2 可执行程序的初始化 <br/><br/>3.9.3 Linker装载动态库 <br/><br/>3.10 调试器——Ptrace和Hook API <br/><br/>3.10.1 ptrace函数简介 <br/><br/>3.10.2 Hook API的原理 <br/><br/>3.10.3 利用ptrace实现<br/><br/>Hook API <br/><br/>第4章 进程间通信——Android<br/><br/>的Binder <br/><br/>4.1 Binder简介 <br/><br/>4.1.1 Binder对象定义 <br/><br/>4.1.2 Binder的架构 <br/><br/>4.1.3 组件Service和匿名<br/><br/>Binder服务 <br/><br/>4.1.4 Binder的层次 <br/><br/>4.2 如何使用Binder <br/><br/>4.2.1 使用Binder服务 <br/><br/>4.2.2 Binder的混合调用 <br/><br/>4.2.3 用Jave开发Binder服务 <br/><br/>4.2.4 用C++开发Binder服务 <br/><br/>4.3 Binder应用层的核心类 <br/><br/>4.3.1 IInterface中的两个宏 <br/><br/>4.3.2 Binder核心类的关系 <br/><br/>4.3.3 函数asInterface的奥秘 <br/><br/>4.3.4 Binder的“死亡通知” <br/><br/>4.3.5 Jave层的Binder类 <br/><br/>4.4 Binder的实现原理 <br/><br/>4.4.1 Binder的线程模型 <br/><br/>4.4.2 Binder对象的传递 <br/><br/>4.4.3 分析IPCThreadState类 <br/><br/>4.5 Binder驱动 <br/><br/>4.5.1 应用层和驱动的消息<br/><br/>协议 <br/><br/>4.5.2 Binder驱动分析 <br/><br/>4.5.3 Binder的内存共享机制 <br/><br/>4.5.4 驱动的ioctl操作 <br/><br/>4.5.5 Binder调用过程 <br/><br/>4.5.6 处理传递的Binder对象 <br/><br/>4.6 解析名称的模块——<br/><br/>ServiceManager的作用 <br/><br/>4.6.1 ServiceManager的架构 <br/><br/>4.6.2 ServiceManger提供<br/><br/>的服务 <br/><br/>4.7 匿名共享内存ashmem <br/><br/>4.7.1 ashmem的作用和用法 <br/><br/>4.7.2 ashmem驱动的实现原理 <br/><br/>4.7.3 ashemem驱动的代码<br/><br/>分析 <br/><br/>4.7.4 进程间传递文件描述符 <br/><br/>第5章 连接Java和C/C++层的<br/><br/>关键——Android的JNI <br/><br/>5.1 JNI的作用 <br/><br/>5.2 JNI用法介绍 <br/><br/>5.2.1 从Java到C/C++ <br/><br/>5.2.2 从C/C++到Java的调用 <br/><br/>5.3 JNI环境 <br/><br/>5.3.1 结构体JNIEnv <br/><br/>5.3.2 JNIEnv的创建和初始化 <br/><br/>5.3.3 JNI中的异常处理 <br/><br/>5.3.4 JNI中的引用 <br/><br/>5.3.5 指明错误位置——<br/><br/>“CheckJNI”的作用 <br/><br/>5.4 ART带来的JNI变化 <br/><br/>5.4.1 垃圾回收的影响 <br/><br/>5.4.2 错误处理的变化 <br/><br/>5.4.3 堆栈可能引发的问题 <br/><br/>第6章 Android的同步和消息机制 <br/><br/>6.1 原子操作 <br/><br/>6.1.1 Android的原子操作函数 <br/><br/>6.1.2 原子操作的实现原理 <br/><br/>6.1.3 内存屏障和编译屏障 <br/><br/>6.2 Android native层的同步方法 <br/><br/>6.2.1 互斥体Mutex和自动锁<br/><br/>Autolock <br/><br/>6.2.2 解决线程同步——条件<br/><br/>类Condition <br/><br/>6.3 Android Java层的同步机制 <br/><br/>6.3.1 同步关键字synchronized <br/><br/>6.3.2 Object类在同步中<br/><br/>的作用 <br/><br/>6.4 Android的消息机制 <br/><br/>6.4.1 消息模型 <br/><br/>6.4.2 理解Looper类 <br/><br/>6.4.3 理解Handler类 <br/><br/>6.4.4 消息的同步——Message<br/><br/>类的setAsynchronous()<br/><br/>方法 <br/><br/>6.4.5 分析MessageQueue类 <br/><br/>6.5 进程间的消息传递 <br/><br/>6.5.1 理解Messenger类 <br/><br/>6.5.2 建立通信通道——<br/><br/>AsyncChannel类的作用 <br/><br/>第7章 第一个用户进程——Android<br/><br/>的Init进程 <br/><br/>7.1 Init进程的初始化过程 <br/><br/>7.1.1 main函数的流程 <br/><br/>……<br/>",
+	"rate":"91%",
+	"assess":[
+				{
+					"user":"aaaaa",
+					"time":"2015-06-28 17:34:43",
+					"content":"与我之前看到的评价不同，我收到的这书简直包装完美，印刷完美，纸质完美。而且内容丰富，讲的特别详细。绝对值这个价"
+				},{
+					"user":"bbbbb",
+					"time":"2015-06-28 17:34:43",
+					"content":"很棒的一本书！之前看了评论有点不敢买还特地去了新华书店，但是新华书店的也是没有塑封而且还破，关键还128。这本书的顺序和我现在用的两本教材都不一样，感觉这样的排版又新鲜又有乐趣，好评"
+				},{
+					"user":"ccccc",
+					"time":"2015-06-28 17:34:43",
+					"content":"很好，正版，很有分量，当然就像其他人说的，包装不会很仔细，不过书籍也没事，我买了三本就是放在一个纸箱里的，运来也还好，没有损坏 服务很好"
+				},{
+					"user":"ddddd",
+					"time":"2015-06-28 17:34:43",
+					"content":"书看起来像正版的，质量很好，包装也很好，物流给力，夜里拍的，夜里就发货了，第二天就到了，好评，下次买书就在这家买了"
+				},{
+					"user":"eeeee",
+					"time":"2015-06-28 17:34:43",
+					"content":"书很好，印刷很清晰，看着挺舒服的?好评"
+				},{
+					"user":"fffff",
+					"time":"2015-06-28 17:34:43",
+					"content":"书挺好的，包装就一层塑料纸，还好没破。物流很快，第二天就到了"
+				},{
+					"user":"ggggg",
+					"time":"2015-06-28 17:34:43",
+					"content":"好书，是正品，送货挺快的，不得不给一个五星好评。"
+				},{
+					"user":"hhhhh",
+					"time":"2015-06-28 17:34:43",
+					"content":"很好很好很好 很好很好很好 很好很好很好，是正品，就是书的外封皮有些破损，但完全不影响使用"
+				},{
+					"user":"iiiii",
+					"time":"2015-06-28 17:34:43",
+					"content":"物流很给力。转天就送到了。书没破损。内容我看不懂。但是我弟弟说挺好的。所以给的五星。"
+				},{
+					"user":"jjjjj",
+					"time":"2015-06-28 17:34:43",
+					"content":"字迹清晰，很好，纸张结实，讲的也是详细，例子还可以"
+				},{
+					"user":"kkkkk",
+					"time":"2015-06-28 17:34:43",
+					"content":"当当的物流一如既往的好！！赞！！！！！！！书也很不错，就是书的包装显得扣，不说了，学习去了！"
+				},{
+					"user":"lllll",
+					"time":"2015-06-28 17:34:43",
+					"content":"相当不错，绝对正版，很厚，肯定对学习特别有帮助，赞"
+				},{
+					"user":"mmmmm",
+					"time":"2015-06-28 17:34:43",
+					"content":"发票拖了半月才发，这效率还是别来坑人"
+				},{
+					"user":"nnnnn",
+					"time":"2015-06-28 17:34:43",
+					"content":"书没有损坏，其实也没有评论里说的那么严重，快递本来想给4星，但最后看快递员是个老大爷，心一酸，觉得谁都不容易啊，给5星"
+				},{
+					"user":"ooooo",
+					"time":"2015-06-28 17:34:43",
+					"content":"快递很快，隔天就到了，但是书右上角有折痕，而且不止一页。包装太简陋了，亲爱的店主你这是走贵书高冷风格吗，人靠衣装，书靠包装。虽说书的内容很精华，但是书这么厚不包装很容易折到。你让我这个强迫症情何以堪。"
+				},{
+					"user":"ppppp",
+					"time":"2015-06-28 17:34:43",
+					"content":"货收到了，快递很快，虽然包装不太好，书有划痕，但是里面是好的，没完美强迫症，可以看，是正版，纸张很好，想学知识的就别在意那么多不重要的细节了。好评。"
+				},{
+					"user":"qqqqq",
+					"time":"2015-06-28 17:34:43",
+					"content":"包装太寒酸了，不过还好书没有任何损伤，斥巨资买的书我要刷一波c"
+				},{
+					"user":"rrrrr",
+					"time":"2015-06-28 17:34:43",
+					"content":"为什么不用纸皮包一下，我拿到时你们的塑料袋包装都破了"
+				},{
+					"user":"sssss",
+					"time":"2015-06-28 17:34:43",
+					"content":"正版书，就是包装太一般了，封面上有印子"
+				},{
+					"user":"ttttt",
+					"time":"2015-06-28 17:34:43",
+					"content":"就包了一个袋………完全不知道爱护书籍，这个好评我是刷我的评价的"
+				},{
+					"user":"uuuuu",
+					"time":"2015-06-28 17:34:43",
+					"content":"包装真心破，像我这种经常在书上画娃娃的人都看不下去了，就一个快递袋，里面装了一本书，关键是快递袋还破了，其实你把包装搞好一点，加价5块钱我都可以接收。。。"
+				},{
+					"user":"vvvvv",
+					"time":"2015-06-28 17:34:43",
+					"content":"相当快啊，就是跑好远去取的。纸张特别好，很重。超值的。"
+				},{
+					"user":"wwwww",
+					"time":"2015-06-28 17:34:43",
+					"content":"发货很快，晚上11点多下的单，第二天上午就到了，目测是正版的，从纸张、印刷质量来看都还行"
+				},{
+					"user":"xxxxx",
+					"time":"2015-06-28 17:34:43",
+					"content":"速度很快，昨天晚上订的今天中午就到了，只可惜书并不是塑胶封的，磨损比较严重"
+				},{
+					"user":"yyyyy",
+					"time":"2015-06-28 17:34:43",
+					"content":"是很好，就是被压了。书边有折痕，对于有强迫症的我来说心里不好受，"
+				},{
+					"user":"zzzzz",
+					"time":"2015-06-28 17:34:43",
+					"content":"正在看，书的质量还不错，就是太难了，慢慢学哈哈"
+				}
+			]
+}
+

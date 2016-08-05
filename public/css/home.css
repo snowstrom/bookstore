@@ -1,0 +1,52 @@
+.hot_board{
+    height: 438px;
+    margin-left: 260px;
+}
+.hot_board img{
+    height: 100%;
+}
+
+.floor .h{
+    margin-bottom:  5px ;
+    font-family: 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+}
+.floor .h h2{
+	font-size:1.8em;
+	font-weight:200;
+    padding: 0 5px;
+    display: inline-block;
+    border-left: solid  #BA350F 4px;
+}
+.floor .h small{
+    font-size: 1em;
+    color: #888888;
+}
+.product_box{
+    float: left;
+    width:275px;
+    height: 360px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid #eee 1px;
+}
+.product_box:hover{
+    border: solid red 1px;
+}
+.product_box .img{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.product_box img{
+    width:200px;
+    height:240px;
+}
+.price{
+    text-align: center;
+    color: #c00;
+	font:500 2em 'Tahoma',\5FAE\8F6F\96C5\9ED1; 
+}
+.title{
+	font: 500 1.6em 'Tahoma',\5FAE\8F6F\96C5\9ED1;
+    text-align: center;
+}

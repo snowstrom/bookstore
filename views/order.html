@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html ng-app="order">
+	<head>
+		<meta charset="utf-8" />
+		<title>订单详情</title>
+		<link rel="stylesheet" href="css/order.css"/>
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/angular.min.js"></script>
+	</head>
+	<body ng-controller="orderCtrl">
+		<div class="shortcut">
+			<div class="layout">
+				<div class="fl">
+					hi,欢迎来到我的书城
+				</div>
+				<div class="fr">
+					<ul class="clear_fix">
+						<li ng-if="login_flag"><a href="/login" target="_self">登录</a></li>
+						<li ng-if="login_flag"><a href="/register" target="_self">注册</a></li>
+						<li ng-if="!login_flag">{{currentUser}}</li>
+						<li ng-if="!login_flag"><a href="/logout">退出</a></li>
+						<li><a href="../cart">我的购物车</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="layout">
+			<a href="/"><img src="assets/bookLogo.jpg" alt="logo"/ class="logo"></a>
+		</div>
+	
+		<div class="layout">
+			<div class="list">
+				<div class="h">已提交的订单</div>
+				<table>
+					<tr>
+						<td class="goods_img"> 商品</td>
+						<td class="goods_name" >名称</td>
+						<td class="goods_price">单价</td>
+						<td class="goods_num">数量</td>
+						<td class="goods_total"> 总额</td>
+						<td class="goods_op">操作</td>
+					</tr>
+					<tr ng-repeat="item in orders">
+						<td class="goods_img"> 
+							<img ng-src="{{item.src}}">
+						</td>
+						<td class="goods_name" >
+							{{item.name}}		 
+						</td>
+						<td class="goods_price">
+							{{item.price | currency:' ￥'}}
+						</td>
+						<td class="goods_num">
+							<div ng-bind="item.num" class="fl"></div>
+						</td>
+						<td class="goods_total"> 
+							<div ng-bind="item.total |currency:' ￥'"></div> 
+						</td>
+						<td class="goods_op">
+							<button class="confirm" ng-click="confirm($index)">确定收货</button>
+						</td>
+					</tr>
+				</table>
+				<div class="clear_fix">
+					<div class="sum">总计：<span ng-bind="sum|currency:' ￥'"></span></div>
+				</div>	
+			</div>
+		</div>
+			
+		<script>
+			angular.module("order",[])
+				.controller("orderCtrl",function($scope){
+					$scope.currentUser="";
+					$scope.login_flag=true;
+					$scope.orders =[];
+					$scope.sum=0;
+					
+					$.get("http://127.0.0.1:3000/order_list",function(data,status){
+						$scope.$apply(function(){
+							if(data){
+								if(data.user){
+									$scope.login_flag=false;
+									$scope.currentUser=data.user;
+								}
+								$scope.orders=data.order_list;
+								$scope.orders.forEach(function(item){
+									$scope.sum += item.total;  //计算总价值
+								})
+							}
+						})
+					});
+					
+					$scope.confirm=function(index){
+						var r = confirm("确定收货了?");
+						if(r){
+							var obj = {
+								"index":index,
+							}
+							var ajaxObj = JSON.stringify(obj);
+							$.ajax({
+								url:"http://127.0.0.1:3000/confirm",
+								type:"POST",
+								data:ajaxObj,
+								dataType:"json",
+								contentType:"application/json",
+								success:function(data,status){
+									if(data){
+										$scope.$apply(function(){
+											$scope.sum -= $scope.orders[index].total;
+											$scope.orders.splice(index,1);
+										})
+									}else{
+										alter("网络异常，操作失败");
+									}
+								}	
+							});
+						}	
+					}
+					
+					$scope.submit=function(){
+						var cart=$scope.cart.forEach(function(item){
+							delete item.$$hashKey
+						})
+						var obj = {
+							"username":$scope.currentUser,
+							"user_info":$scope.user_info,
+							"list":$scope.cart
+						}
+						var ajaxObj = JSON.stringify(obj);
+						$.ajax({
+							url:"http://127.0.0.1:3000/submit",
+							type:"POST",
+							data:ajaxObj,
+							dataType:"json",
+							contentType:"application/json",
+							success:function(data,status){
+								if(data){
+									alert("订单提交成功!");
+									$scope.cart=[];
+									window.location.href=window.location.href;
+								}else{
+									alert("出现异常，订单提交失败!");
+								}
+							}
+						
+						})
+					}	
+				});
+		</script>
+	</body>
+</html>
